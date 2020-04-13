@@ -74,7 +74,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     protected UserDetailsService userDetailsService() {
         UserDetails rashmiUser = User.builder()
-                .username("Rashmi")
+                .username("Jerry")
                 .password(passwordEncoder.encode("password"))
 //                .roles(STUDENT.name())  //ROLE_STUDENT
                 .authorities(STUDENT.getGrantedAuthorities())
